@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba cards</title>
+</head>
+
+<style>
+*{
+    box-sizing: 0px;
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    
+    font-family: poppins;
+    color: #454845;
+
+}
+p{
+    font-style: regular;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+/* POSICIONES---------------------- */
+
+.relative{
+    position: relative;
+}
+
+
+.absololute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+/* ----------------------------- */
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+
+.card{
+
+  margin: 10px;
+  flex:0 0 200px;
+  
+ 
+
+}
+
+
+.imgcard{
+
+   max-width: 100%;
+   display: block;
+
+  
+}
+
+.texcard{
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+margin: 10px;
+gap: 10px;
+text-align: justify;
+
+}
+
+            .cardbut{
+                display: flex;
+                justify-content: center;
+                padding-top: 40px;
+            }
+
+            #cardbutton{
+                font-family: poppins;
+                border: solid #454845 0,1px;
+                background-color: white;
+                padding: 8px 16px 8px 16px;
+                border-radius: 4px;
+                
+                
+   
+            }
+
+            #cardbutton :hover{
+                    background-color: #454845;
+                    color: white;
+            }
+
+</style>
+
+<body>
+   
+
+ <div class="container">
+    <h1>Esto es una prueba de cards</h1>
+
+    <br><br><br><br>
+
+    <div class="cards">
+        
+                        <!-- Mattura -->
+
+            <div class="card">
+
+                <div class="imgcard"> 
+                    <img src="/img/Mattura.png" alt="Mattura">
+                </div>
+           
+
+                <div class="textcard">
+                    <h2>Mattura</h2>
+                    <p>Mattura es un e-commerce de productos de madera fabricados de manera sostenible</p>
+                    <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
+                </div>
+
+            </div>    
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Rutea -->
+
+                <div class="card">
+
+                    <div class="imgcard"> 
+                        <img src="/img/rutea.png" alt="Rutea">
+                    </div>
+               
+    
+                    <div class="textcard">
+                        <h2>Rutea</h2>
+                        <p>Landing page a través de la cual puedes hacerte socix de Rutea y hacerte con una camper como si fuera tuya durante 25 días al año</p>
+                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- cocozone -->
+
+                <div class="card">
+
+                    <div class="imgcard"> 
+                        <img src= "/img/rutea.png" alt="Cocozone">
+                    </div>
+               
+    
+                    <div class="textcard">
+                        <h2>CocoZone</h2>
+                        <p>App de compra-venta de videojuegos</p>
+                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
+                    </div>
+
+
+                </div>
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
