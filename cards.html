@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,167 +8,174 @@
 </head>
 
 <style>
-*{
-    box-sizing: 0px;
-    margin: 0;
-    padding: 0px;
-    text-decoration: none;
-    list-style: none;
-    
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  
-}
-
-body{
-    
-    font-family: poppins;
-    color: #454845;
-
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-}
-
-p{
-    font-style: regular;
-}
-
-
-
-
-/* POSICIONES---------------------- */
-
-.relative{
-    position: relative;
-}
-
-
-.absololute{
-    position: absolute;
-}
-
-.fixed{
-    position: fixed;
-}
-
-/* ----------------------------- */
-
-
-.cards{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin: 40px 20px;
-    gap: 20px;
+    * {
+        box-sizing: 0px;
+        margin: 0;
+        padding: 0px;
+        text-decoration: none;
+        list-style: none;
 
     }
 
-        .card{
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
 
-        flex: 1 0 200px;
+    }
+
+    body {
+
+        font-family: poppins;
+        color: #454845;
+        font-size: small;
+
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-style: regular;
+    }
+
+
+
+
+    /* POSICIONES---------------------- */
+
+    .relative {
+        position: relative;
+    }
+
+
+    .absololute {
+        position: absolute;
+    }
+
+    .fixed {
+        position: fixed;
+    }
+
+    /* ----------------------------- */
+
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin: 40px 20px;
+        gap: 20px;
+
+    }
+
+    .card {
+
+        /* flex: 1 0 200px; */
+        width: 200px;
         margin: 10px;
-           
-
-        }
-
-
-.imgcard{
-
-   max-width: 100%;
-
-  
-}
-
-.texcard{
-display: flex;
-flex-direction: column;
-padding: 10px 14px 10px 14px;
-height: 100vh;
-
-}
-
-            .cardbut{
-                display: flex;
-                justify-content: center;
-                padding-top: 40px;
-            }
-
-            #cardbutton{
-                font-family: poppins;
-                border: solid #454845 0,1px;
-                background-color: white;
-                padding: 8px 16px 8px 16px;
-                border-radius: 4px;
-                
-                
-   
-            }
-
-            #cardbutton :hover{
-                    background-color: #454845;
-                    color: white;
-            }
+       
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
 
 
 
-            
+    }
 
 
+    .imgcard {
+
+        /* max-width: 100%; */
+
+    }
+
+    .imagen{
+        width: 100%;
+    }
+
+    .texcard {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 16px;
+        height: 100vh;
+
+    }
+
+    .cardbut {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    #cardbutton {
+        font-family: poppins;
+        border: solid #454845 0, 1px;
+        background-color: white;
+        padding: 8px 16px 8px 16px;
+        border-radius: 4px;
+        
+
+
+
+    }
+
+    #cardbutton :hover {
+        background-color: #454845;
+        color: white;
+        transition: .8s ease-in;
+    }
 </style>
 
 <body>
-   
 
- <div class="container">
-    <h1>Esto es una prueba de cards </h1>
 
-    <br><br><br><br>
+    <div class="container">
+        <h1>Esto es una prueba de cards </h1>
 
-    <div class="contenido">
+        <br><br><br><br>
 
-    <div class="cards">
-        
-                        <!-- Mattura -->
+        <div class="contenido">
 
-            <div class="card">
+            <div class="cards">
 
-                <div class="imgcard"> 
-                    <img src="./img/mattura.png" alt="Mattura">
-                </div>
-           
+                <!-- Mattura -->
 
-                <div class="textcard">
-                    <h2>Mattura</h2>
-                    <p>Mattura es un e-commerce de productos de madera fabricados de manera sostenible</p>
+                <div class="card">
+
+                    <div class="imgcard">
+                        <img class="imagen" src="./img/mattura.png" alt="Mattura">
+                    </div>
+
+
+                    <div class="textcard">
+                        <h3>Mattura</h3>
+                        <p>Mattura es un e-commerce de productos de madera fabricados de manera sostenible</p>
+                    </div>
                     <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
-                </div>
 
-            </div>    
-<!-- --------------------------------------------------------------------------------------------------------------- -->
+                </div>
+                <!-- --------------------------------------------------------------------------------------------------------------- -->
 
                 <!-- Rutea -->
 
                 <div class="card">
 
-                    <div class="imgcard"> 
-                        <img src="./img/rutea.png" alt="Rutea">
-                    </div>
-               
-    
-                    <div class="textcard">
-                        <h2>Rutea</h2>
-                        <p>Landing page a través de la cual puedes hacerte socix de Rutea y hacerte con una camper como si fuera tuya durante 25 días al año</p>
-                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
+                    <div class="imgcard">
+                        <img class="imagen" src="./img/rutea.png" alt="Rutea">
                     </div>
 
+
+                    <div class="textcard">
+                        <h3>Rutea</h3>
+                        <p>Landing page a través de la cual puedes hacerte socix de Rutea y hacerte con una camper como
+                            si fuera tuya durante 25 días al año</p> 
+                        </div>
+                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
 
                 </div>
 
@@ -177,16 +185,16 @@ height: 100vh;
 
                 <div class="card">
 
-                    <div class="imgcard"> 
-                        <img src= "./img/cocos.png" alt= "cocos">
+                    <div class="imgcard">
+                        <img class="imagen"src="./img/cocos.png" alt="cocos">
                     </div>
-               
-    
+
+
                     <div class="textcard">
-                        <h2>CocoZone</h2>
+                        <h3>CocoZone</h3>
                         <p>App de compra-venta de videojuegos</p>
-                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
                     </div>
+                    <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
 
 
                 </div>
@@ -196,24 +204,24 @@ height: 100vh;
 
                 <div class="card">
 
-                    <div class="imgcard"> 
-                        <img src= "./img/unavioska.png" alt="unavioska">
+                    <div class="imgcard">
+                        <img class="imagen" src="./img/unavioska.png" alt="unavioska">
                     </div>
-               
-    
+
+
                     <div class="textcard">
-                        <h2>unavioska</h2>
+                        <h3>unavioska</h3>
                         <p>Catálogo para una tienda local de plata y macramé</p>
-                        <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
                     </div>
+                    <div class="cardbut"> <button id="cardbutton">Ver proyecto completo</button></div>
 
 
                 </div>
 
-    </div>
+            </div>
 
-</div>
-</div>
+        </div>
+    </div>
 
 
 
